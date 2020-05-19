@@ -1,3 +1,0 @@
-MutationRule - [resolvedCall] at /Users/Rajat_Sanjay_Varyani/IdeaProjects/detekt-extensions/src/main/kotlin/rule/MutationRule.kt:29:9 - Signature=MutationRule.kt$MutationRule$var resolvedCall = expression.getResolvedCall(bindingContext) ?: return
-WildcardImport - [MutationRule.kt] at /Users/Rajat_Sanjay_Varyani/IdeaProjects/detekt-extensions/src/main/kotlin/rule/MutationRule.kt:3:1 - Signature=MutationRule.kt$import io.gitlab.arturbosch.detekt.api.*
-WildcardImport - [MutationRule.kt] at /Users/Rajat_Sanjay_Varyani/IdeaProjects/detekt-extensions/src/main/kotlin/rule/MutationRule.kt:4:1 - Signature=MutationRule.kt$import org.jetbrains.kotlin.psi.*
