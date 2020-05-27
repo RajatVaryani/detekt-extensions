@@ -1,4 +1,4 @@
-package rule
+package rules
 
 import io.gitlab.arturbosch.detekt.test.KtTestCompiler
 import io.gitlab.arturbosch.detekt.test.compileAndLint
@@ -8,10 +8,9 @@ import org.spekframework.spek2.Spek
 import org.spekframework.spek2.style.specification.describe
 
 class MutationRuleTest : Spek({
-//    TODO Understand this:
     val wrapper by memoized(
-        factory = { KtTestCompiler.createEnvironment() },
-        destructor = { it.dispose() }
+            factory = { KtTestCompiler.createEnvironment() },
+            destructor = { it.dispose() }
     )
 
     describe("Mutation testing") {

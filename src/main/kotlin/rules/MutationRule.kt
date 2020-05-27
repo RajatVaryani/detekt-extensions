@@ -1,4 +1,4 @@
-package rule
+package rules
 
 import io.gitlab.arturbosch.detekt.api.*
 import org.jetbrains.kotlin.psi.*

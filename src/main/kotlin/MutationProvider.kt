@@ -1,9 +1,9 @@
 import io.gitlab.arturbosch.detekt.api.Config
 import io.gitlab.arturbosch.detekt.api.RuleSet
 import io.gitlab.arturbosch.detekt.api.RuleSetProvider
-import rule.MutationRule
+import rules.MutationRule
 
-class SampleProvider : RuleSetProvider {
+class MutationProvider : RuleSetProvider {
 
     override val ruleSetId: String = "mutation"
 

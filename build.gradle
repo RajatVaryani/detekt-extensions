@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
 }
 
-group 'rule'
+group 'rules'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -11,23 +11,7 @@ repositories {
     jcenter()
 }
 
-publishing {
-    repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/RajatVaryani/detekt-extensions")
-            credentials {
-                username = project.findProperty("gpr.user") ?: System.getenv("USERNAME")
-                password = project.findProperty("gpr.key") ?: System.getenv("TOKEN")
-            }
-        }
-    }
-    publications {
-        gpr(MavenPublication) {
-            from(components.java)
-        }
-    }
-}
+
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     implementation group: 'io.gitlab.arturbosch.detekt', name: 'detekt-api', version: '1.9.0'
